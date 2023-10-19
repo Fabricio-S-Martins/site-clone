@@ -18,10 +18,32 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 1900px;
+  overflow-x: hidden;
+}
+
+
+
+.borderAnimation {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  padding: 6px;
+  cursor: pointer;
+}
+.borderAnimation:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 2.5px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+.borderAnimation:hover:before {
+  height: 100%;
+  transform: translateX(0);
+  transition: 0.2s transform linear, .3s height linear .3s;
 }
