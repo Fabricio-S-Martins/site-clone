@@ -12,9 +12,13 @@ export const InitialSection = () => {
                     <div className="w-52 text-sm pt-6">
                         <BotaoAtendimento name="SIMULE AGORA O SEU" />
                     </div>
-                    <div className="flex items-center justify-center border-[1px] border-white w-10 h-10 rounded-full my-8 md:my-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    <div className="py-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" strokeWidth="1.5" stroke="currentColor" className="w-10 h-10 lg:hidden cursor-pointer hover:animate-bounce">
+                            <circle className="fill-none stroke-current stroke-1 stroke-linecap-round stroke-linejoin-round stroke-miterlimit-10" cx="16" cy="16" r="13"></circle>
+                            <polyline className="fill-none stroke-current stroke-1 stroke-linecap-round stroke-linejoin-round stroke-miterlimit-10" points="21,14 16,19 11,14"></polyline>
+                        </svg>
+                        <svg viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" strokeWidth="1.5" className="w-14 h-14 hidden cursor-pointer animate-[bounce_2s_ease-in-out_infinite] duration-1000 lg:flex stroke-gray-300 hover:stroke-white">
+                            <path d="M12 9V7M12 21C8.68629 21 6 18.3137 6 15V9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9V15C18 18.3137 15.3137 21 12 21Z" strokeWidth="0.7" strokeLinecap="round" strokeLinejoin="round"></path>
                         </svg>
                     </div>
                 </div>

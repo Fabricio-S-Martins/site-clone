@@ -1,4 +1,4 @@
-import logo from '../../../public/images/logo-maxi-589a6d86.png'
+import logo from '../../../public/images/logoVermelho.png'
 
 export const Footer = () => {
     return (
@@ -10,7 +10,7 @@ export const Footer = () => {
                 </div>
                 <div className='flex w-full gap-5 pt-20 lg:w-3/6 lg:pt-0'>
                     <div className='flex flex-col w-1/2 gap-4'>
-                        <span className='text-gray-600'>LGPD e Privacidade</span>
+                        <span className='text-gray-500'>LGPD e Privacidade</span>
                         <span>Politica de Privacidade</span>
                     </div>
                     <div className='flex flex-col w-1/2 gap-4'>
@@ -20,7 +20,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p>© 2023 Maximídia. Maximídia</p>
+            <p className='text-gray-500'>© 2023 Maximídia. Maximídia</p>
         </footer>
 
     );
